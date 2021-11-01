@@ -10,8 +10,8 @@ input cs,
 input we,
 input oe
 );
-reg [DATA_WIDTH-1:0] 	tmp_data;
-reg [DATA_WIDTH-1:0] 	mem [DEPTH];
+reg [DATA_WIDTH-1:0] tmp_data;
+reg [DATA_WIDTH-1:0] mem [DEPTH];
 always @ (posedge clk) begin
 if (cs & we)
 mem[addr] <= data;
