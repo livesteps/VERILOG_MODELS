@@ -3,12 +3,12 @@ module sp_sram
    parameter DATA_WIDTH = 32,
    parameter DEPTH = 1024
 )
-(input 					clk,
+(input clk,
 input [ADDR_WIDTH-1:0] addr,
 inout [DATA_WIDTH-1:0] data,
-input 					cs,
-input 					we,
-input 					oe
+input cs,
+input we,
+input oe
 );
 reg [DATA_WIDTH-1:0] 	tmp_data;
 reg [DATA_WIDTH-1:0] 	mem [DEPTH];
