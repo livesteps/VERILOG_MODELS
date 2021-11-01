@@ -1,7 +1,7 @@
-module single_port_sync_ram 
-# (parameter ADDR_WIDTH = 4,
+module sp_sram
+# (parameter ADDR_WIDTH = 32,
    parameter DATA_WIDTH = 32,
-   parameter DEPTH = 16 
+   parameter DEPTH = 1024
 )
 (input 					clk,
 input [ADDR_WIDTH-1:0] addr,
